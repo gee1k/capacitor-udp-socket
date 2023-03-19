@@ -1,6 +1,6 @@
 {
   "name": "capacitor-udp-socket",
-  "version": "0.0.1",
+  "version": "4.0.0",
   "description": "UDP Socket",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
@@ -17,10 +17,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gee1k/capacitor-sockets.git.git.git"
+    "url": "git+https://github.com/gee1k/capacitor-udp-socket.git"
   },
   "bugs": {
-    "url": "https://github.com/gee1k/capacitor-sockets.git.git/issues"
+    "url": "https://github.com/gee1k/capacitor-udp-socket/issues"
   },
   "keywords": [
     "capacitor",
