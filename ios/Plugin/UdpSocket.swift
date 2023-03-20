@@ -149,15 +149,6 @@ public class UdpSocket: NSObject {
             socket?.closeAfterSending()
         }
     }
-    
-    // delegate
-    public func udpSocket(_ sock: GCDAsyncUdpSocket, didSendDataWithTag tag: Int) {
-        print("Data sent with tag: \(tag)")
-    }
-
-    public func udpSocket(_ sock: GCDAsyncUdpSocket, didNotSendDataWithTag tag: Int, dueToError error: Error?) {
-        print("Data not sent with tag: \(tag), error: \(error!)")
-    }
 }
 
 //delegate
@@ -176,7 +167,7 @@ extension UdpSocket: GCDAsyncUdpSocketDelegate {
     public func udpSocketDidClose(_ sock: GCDAsyncUdpSocket, withError error: Error?) {
         var ret = [String: Any]()
         ret["socketId"] = self.socketId
-        ret["error"] = "socket closed"
+        ret["error"] = error?.localizedDescription ?? "socket closed"
         
         onReceivedErrorHandler?(ret)
     }

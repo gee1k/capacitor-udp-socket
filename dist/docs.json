@@ -1,0 +1,952 @@
+{
+  "api": {
+    "name": "UdpSocketPlugin",
+    "slug": "udpsocketplugin",
+    "docs": "UDP socket plugin for Capacitor.\n\nOnly available on Android and iOS.",
+    "tags": [],
+    "methods": [
+      {
+        "name": "create",
+        "signature": "(options?: CreateOptions | undefined) => Promise<CreateResult>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "CreateOptions | undefined"
+          }
+        ],
+        "returns": "Promise<CreateResult>",
+        "tags": [
+          {
+            "name": "since",
+            "text": "4.0.0"
+          }
+        ],
+        "docs": "Create a socket for udp, and you can create more than one differentiated by the socket id.\n\nOnly available on Android and iOS.",
+        "complexTypes": [
+          "CreateResult",
+          "CreateOptions"
+        ],
+        "slug": "create"
+      },
+      {
+        "name": "update",
+        "signature": "(options: UpdateOptions) => Promise<void>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "UpdateOptions"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [
+          {
+            "name": "since",
+            "text": "4.0.0"
+          }
+        ],
+        "docs": "Update the socket info including socket name and buffer size.\n\nOnly available on Android and iOS.",
+        "complexTypes": [
+          "UpdateOptions"
+        ],
+        "slug": "update"
+      },
+      {
+        "name": "bind",
+        "signature": "(options: BindOptions) => Promise<void>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "BindOptions"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [
+          {
+            "name": "since",
+            "text": "4.0.0"
+          }
+        ],
+        "docs": "You need to bind a socket before sending and receiving data.\n\nOnly available on Android and iOS.",
+        "complexTypes": [
+          "BindOptions"
+        ],
+        "slug": "bind"
+      },
+      {
+        "name": "send",
+        "signature": "(options: SendOptions) => Promise<void>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "SendOptions"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [
+          {
+            "name": "since",
+            "text": "4.0.0"
+          }
+        ],
+        "docs": "Send udp data\n\nOnly available on Android and iOS.",
+        "complexTypes": [
+          "SendOptions"
+        ],
+        "slug": "send"
+      },
+      {
+        "name": "close",
+        "signature": "(options: CloseOptions) => Promise<void>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "CloseOptions"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [
+          {
+            "name": "since",
+            "text": "4.0.0"
+          }
+        ],
+        "docs": "Close one socket\n\nOnly available on Android and iOS.",
+        "complexTypes": [
+          "CloseOptions"
+        ],
+        "slug": "close"
+      },
+      {
+        "name": "closeAllSockets",
+        "signature": "() => Promise<void>",
+        "parameters": [],
+        "returns": "Promise<void>",
+        "tags": [
+          {
+            "name": "since",
+            "text": "4.0.0"
+          }
+        ],
+        "docs": "Close All Sockets\n\nOnly available on Android and iOS.",
+        "complexTypes": [],
+        "slug": "closeallsockets"
+      },
+      {
+        "name": "setBroadcast",
+        "signature": "(options: SetBroadcastOptions) => Promise<void>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "SetBroadcastOptions"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [
+          {
+            "name": "since",
+            "text": "4.0.0"
+          }
+        ],
+        "docs": "After enabling broadcasting, you can send data with target address 255.255.255.255.\n\nOnly available on Android and iOS.",
+        "complexTypes": [
+          "SetBroadcastOptions"
+        ],
+        "slug": "setbroadcast"
+      },
+      {
+        "name": "setPaused",
+        "signature": "(options: SetPausedOptions) => Promise<void>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "SetPausedOptions"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [
+          {
+            "name": "since",
+            "text": "4.0.0"
+          }
+        ],
+        "docs": "Pause receiving data.\n\nOnly available on Android and iOS.",
+        "complexTypes": [
+          "SetPausedOptions"
+        ],
+        "slug": "setpaused"
+      },
+      {
+        "name": "getInfo",
+        "signature": "(options: InfoOptions) => Promise<InfoResult>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "InfoOptions"
+          }
+        ],
+        "returns": "Promise<InfoResult>",
+        "tags": [
+          {
+            "name": "since",
+            "text": "4.0.0"
+          }
+        ],
+        "docs": "Get Socket information\n\nOnly available on Android and iOS.",
+        "complexTypes": [
+          "InfoResult",
+          "InfoOptions"
+        ],
+        "slug": "getinfo"
+      },
+      {
+        "name": "getSockets",
+        "signature": "() => Promise<GetSocketsResult>",
+        "parameters": [],
+        "returns": "Promise<GetSocketsResult>",
+        "tags": [
+          {
+            "name": "since",
+            "text": "4.0.0"
+          }
+        ],
+        "docs": "Obtain all the sockets available.\n\nOnly available on Android and iOS.",
+        "complexTypes": [
+          "GetSocketsResult"
+        ],
+        "slug": "getsockets"
+      },
+      {
+        "name": "joinGroup",
+        "signature": "(options: JoinGroupOptions) => Promise<void>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "JoinGroupOptions"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [
+          {
+            "name": "since",
+            "text": "4.0.0"
+          }
+        ],
+        "docs": "Join a particular group address. For IPv4, it's like \"238.12.12.12\". For IPv6, it's like \"ff02::08\".\n\nOnly available on Android and iOS.",
+        "complexTypes": [
+          "JoinGroupOptions"
+        ],
+        "slug": "joingroup"
+      },
+      {
+        "name": "leaveGroup",
+        "signature": "(options: LeaveGroupOptions) => Promise<void>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "LeaveGroupOptions"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [
+          {
+            "name": "since",
+            "text": "4.0.0"
+          }
+        ],
+        "docs": "Leave a particular group address. For IPv4, it's like \"238.12.12.12\". For IPv6, it's like \"ff02::08\".\n\nOnly available on Android and iOS.",
+        "complexTypes": [
+          "LeaveGroupOptions"
+        ],
+        "slug": "leavegroup"
+      },
+      {
+        "name": "getJoinedGroups",
+        "signature": "() => Promise<GetJoinedGroupsResult>",
+        "parameters": [],
+        "returns": "Promise<GetJoinedGroupsResult>",
+        "tags": [
+          {
+            "name": "since",
+            "text": "4.0.0"
+          }
+        ],
+        "docs": "Get joined groups\n\nOnly available on Android and iOS.",
+        "complexTypes": [
+          "GetJoinedGroupsResult"
+        ],
+        "slug": "getjoinedgroups"
+      },
+      {
+        "name": "setMulticastTimeToLive",
+        "signature": "(options: SetMulticastTimeToLiveOptions) => Promise<void>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "SetMulticastTimeToLiveOptions"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [
+          {
+            "name": "since",
+            "text": "4.0.0"
+          }
+        ],
+        "docs": "Set the time to live (TTL) for multicast packets\n\nOnly available on Android and iOS.",
+        "complexTypes": [
+          "SetMulticastTimeToLiveOptions"
+        ],
+        "slug": "setmulticasttimetolive"
+      },
+      {
+        "name": "setMulticastLoopbackMode",
+        "signature": "(options: SetMulticastLoopbackModeOptions) => Promise<void>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "SetMulticastLoopbackModeOptions"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [
+          {
+            "name": "since",
+            "text": "4.0.0"
+          }
+        ],
+        "docs": "Set whether to enable multicast loopback mode\n\nOnly available on Android and iOS.",
+        "complexTypes": [
+          "SetMulticastLoopbackModeOptions"
+        ],
+        "slug": "setmulticastloopbackmode"
+      },
+      {
+        "name": "addListener",
+        "signature": "(eventName: 'receive', listenerFunc: (event: ReceiveEvent) => void) => Promise<PluginListenerHandle> & PluginListenerHandle",
+        "parameters": [
+          {
+            "name": "eventName",
+            "docs": "",
+            "type": "'receive'"
+          },
+          {
+            "name": "listenerFunc",
+            "docs": "",
+            "type": "(event: ReceiveEvent) => void"
+          }
+        ],
+        "returns": "Promise<PluginListenerHandle> & PluginListenerHandle",
+        "tags": [
+          {
+            "name": "since",
+            "text": "4.0.0"
+          }
+        ],
+        "docs": "Listening for data reception events\n\nOnly available on Android and iOS.",
+        "complexTypes": [
+          "PluginListenerHandle",
+          "ReceiveEvent"
+        ],
+        "slug": "addlistenerreceive"
+      },
+      {
+        "name": "addListener",
+        "signature": "(eventName: 'receiveError', listenerFunc: (event: ReceiveEvent) => void) => Promise<PluginListenerHandle> & PluginListenerHandle",
+        "parameters": [
+          {
+            "name": "eventName",
+            "docs": "",
+            "type": "'receiveError'"
+          },
+          {
+            "name": "listenerFunc",
+            "docs": "",
+            "type": "(event: ReceiveEvent) => void"
+          }
+        ],
+        "returns": "Promise<PluginListenerHandle> & PluginListenerHandle",
+        "tags": [
+          {
+            "name": "since",
+            "text": "4.0.0"
+          }
+        ],
+        "docs": "Listening for data reception exception events\n\nOnly available on Android and iOS.",
+        "complexTypes": [
+          "PluginListenerHandle",
+          "ReceiveEvent"
+        ],
+        "slug": "addlistenerreceiveerror"
+      },
+      {
+        "name": "removeAllListeners",
+        "signature": "() => Promise<void>",
+        "parameters": [],
+        "returns": "Promise<void>",
+        "tags": [
+          {
+            "name": "since",
+            "text": "4.0.0"
+          }
+        ],
+        "docs": "Remove all native listeners for this plugin\n\nOnly available on Android and iOS.",
+        "complexTypes": [],
+        "slug": "removealllisteners"
+      }
+    ],
+    "properties": []
+  },
+  "interfaces": [
+    {
+      "name": "CreateResult",
+      "slug": "createresult",
+      "docs": "Result of creating a UDP socket",
+      "tags": [
+        {
+          "text": "4.0.0",
+          "name": "since"
+        }
+      ],
+      "methods": [],
+      "properties": [
+        {
+          "name": "socketId",
+          "tags": [],
+          "docs": "The id of the socket",
+          "complexTypes": [],
+          "type": "number"
+        },
+        {
+          "name": "ipv4",
+          "tags": [],
+          "docs": "ipv4 address",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "ipv6",
+          "tags": [],
+          "docs": "ipv6 address",
+          "complexTypes": [],
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "CreateOptions",
+      "slug": "createoptions",
+      "docs": "Parameters for creating a UDP socket",
+      "tags": [
+        {
+          "text": "4.0.0",
+          "name": "since"
+        }
+      ],
+      "methods": [],
+      "properties": [
+        {
+          "name": "properties",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "{ name?: string | undefined; bufferSize?: number | undefined; } | undefined"
+        }
+      ]
+    },
+    {
+      "name": "UpdateOptions",
+      "slug": "updateoptions",
+      "docs": "Parameters for updating a UDP socket",
+      "tags": [
+        {
+          "text": "4.0.0",
+          "name": "since"
+        }
+      ],
+      "methods": [],
+      "properties": [
+        {
+          "name": "socketId",
+          "tags": [],
+          "docs": "The id of the socket",
+          "complexTypes": [],
+          "type": "number"
+        },
+        {
+          "name": "properties",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "{ name?: string | undefined; bufferSize?: number | undefined; }"
+        }
+      ]
+    },
+    {
+      "name": "BindOptions",
+      "slug": "bindoptions",
+      "docs": "Parameters for binding a UDP socket",
+      "tags": [
+        {
+          "text": "4.0.0",
+          "name": "since"
+        }
+      ],
+      "methods": [],
+      "properties": [
+        {
+          "name": "socketId",
+          "tags": [],
+          "docs": "The id of the socket",
+          "complexTypes": [],
+          "type": "number"
+        },
+        {
+          "name": "address",
+          "tags": [],
+          "docs": "The address to bind to. If not specified, the socket will be bound to the wildcard address.",
+          "complexTypes": [],
+          "type": "string | undefined"
+        },
+        {
+          "name": "port",
+          "tags": [],
+          "docs": "The port to bind to.",
+          "complexTypes": [],
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "SendOptions",
+      "slug": "sendoptions",
+      "docs": "Parameters for sending data",
+      "tags": [
+        {
+          "text": "4.0.0",
+          "name": "since"
+        }
+      ],
+      "methods": [],
+      "properties": [
+        {
+          "name": "socketId",
+          "tags": [],
+          "docs": "The id of the socket",
+          "complexTypes": [],
+          "type": "number"
+        },
+        {
+          "name": "address",
+          "tags": [],
+          "docs": "The address of the remote host.",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "port",
+          "tags": [],
+          "docs": "The port of the remote host.",
+          "complexTypes": [],
+          "type": "number"
+        },
+        {
+          "name": "buffer",
+          "tags": [],
+          "docs": "The data to send.",
+          "complexTypes": [],
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "CloseOptions",
+      "slug": "closeoptions",
+      "docs": "Parameters for closing a UDP socket",
+      "tags": [
+        {
+          "text": "4.0.0",
+          "name": "since"
+        }
+      ],
+      "methods": [],
+      "properties": [
+        {
+          "name": "socketId",
+          "tags": [],
+          "docs": "The id of the socket",
+          "complexTypes": [],
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "SetBroadcastOptions",
+      "slug": "setbroadcastoptions",
+      "docs": "Parameters for settings broadcast mode",
+      "tags": [
+        {
+          "text": "4.0.0",
+          "name": "since"
+        }
+      ],
+      "methods": [],
+      "properties": [
+        {
+          "name": "socketId",
+          "tags": [],
+          "docs": "The id of the socket",
+          "complexTypes": [],
+          "type": "number"
+        },
+        {
+          "name": "enabled",
+          "tags": [],
+          "docs": "Whether to enable broadcast mode.",
+          "complexTypes": [],
+          "type": "boolean"
+        }
+      ]
+    },
+    {
+      "name": "SetPausedOptions",
+      "slug": "setpausedoptions",
+      "docs": "Parameters for binding a UDP socket",
+      "tags": [
+        {
+          "text": "4.0.0",
+          "name": "since"
+        }
+      ],
+      "methods": [],
+      "properties": [
+        {
+          "name": "socketId",
+          "tags": [],
+          "docs": "The id of the socket",
+          "complexTypes": [],
+          "type": "number"
+        },
+        {
+          "name": "paused",
+          "tags": [],
+          "docs": "Whether to pause receiving data",
+          "complexTypes": [],
+          "type": "boolean"
+        }
+      ]
+    },
+    {
+      "name": "InfoResult",
+      "slug": "inforesult",
+      "docs": "Result of getting information about a UDP socket",
+      "tags": [
+        {
+          "text": "4.0.0",
+          "name": "since"
+        }
+      ],
+      "methods": [],
+      "properties": [
+        {
+          "name": "socketId",
+          "tags": [],
+          "docs": "The id of the socket",
+          "complexTypes": [],
+          "type": "number"
+        },
+        {
+          "name": "name",
+          "tags": [],
+          "docs": "The name of the socket, which can be used to distinguish between multiple sockets.",
+          "complexTypes": [],
+          "type": "string | null"
+        },
+        {
+          "name": "bufferSize",
+          "tags": [],
+          "docs": "The size of the buffer used to receive data.",
+          "complexTypes": [],
+          "type": "number"
+        },
+        {
+          "name": "paused",
+          "tags": [],
+          "docs": "Whether data reception has been suspended。",
+          "complexTypes": [],
+          "type": "boolean"
+        },
+        {
+          "name": "localAddress",
+          "tags": [],
+          "docs": "The address to which the socket is bound.",
+          "complexTypes": [],
+          "type": "string | undefined"
+        },
+        {
+          "name": "localPort",
+          "tags": [],
+          "docs": "The port to which the socket is bound.",
+          "complexTypes": [],
+          "type": "number | undefined"
+        }
+      ]
+    },
+    {
+      "name": "InfoOptions",
+      "slug": "infooptions",
+      "docs": "Parameters for getting information about a UDP socket",
+      "tags": [
+        {
+          "text": "4.0.0",
+          "name": "since"
+        }
+      ],
+      "methods": [],
+      "properties": [
+        {
+          "name": "socketId",
+          "tags": [],
+          "docs": "The id of the socket",
+          "complexTypes": [],
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "GetSocketsResult",
+      "slug": "getsocketsresult",
+      "docs": "Parameters for getting information about all UDP sockets",
+      "tags": [
+        {
+          "text": "4.0.0",
+          "name": "since"
+        }
+      ],
+      "methods": [],
+      "properties": [
+        {
+          "name": "sockets",
+          "tags": [],
+          "docs": "The list of UDP sockets",
+          "complexTypes": [
+            "InfoResult"
+          ],
+          "type": "InfoResult[]"
+        }
+      ]
+    },
+    {
+      "name": "JoinGroupOptions",
+      "slug": "joingroupoptions",
+      "docs": "Parameters for joining a multicast group",
+      "tags": [
+        {
+          "text": "4.0.0",
+          "name": "since"
+        }
+      ],
+      "methods": [],
+      "properties": [
+        {
+          "name": "socketId",
+          "tags": [],
+          "docs": "The id of the socket",
+          "complexTypes": [],
+          "type": "number"
+        },
+        {
+          "name": "address",
+          "tags": [],
+          "docs": "The address of the multicast group to join.\nFor IPv4, it's like \"238.12.12.12\". For IPv6, it's like \"ff02::08\".",
+          "complexTypes": [],
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "LeaveGroupOptions",
+      "slug": "leavegroupoptions",
+      "docs": "Parameters for leaving a multicast group",
+      "tags": [
+        {
+          "text": "4.0.0",
+          "name": "since"
+        }
+      ],
+      "methods": [],
+      "properties": [
+        {
+          "name": "socketId",
+          "tags": [],
+          "docs": "The id of the socket",
+          "complexTypes": [],
+          "type": "number"
+        },
+        {
+          "name": "address",
+          "tags": [],
+          "docs": "The address of the multicast group to leave.\nFor IPv4, it's like \"238.12.12.12\". For IPv6, it's like \"ff02::08\".",
+          "complexTypes": [],
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "GetJoinedGroupsResult",
+      "slug": "getjoinedgroupsresult",
+      "docs": "Parameters for getting joined multicast groups",
+      "tags": [
+        {
+          "text": "4.0.0",
+          "name": "since"
+        }
+      ],
+      "methods": [],
+      "properties": [
+        {
+          "name": "groups",
+          "tags": [],
+          "docs": "The list of multicast group addresses",
+          "complexTypes": [],
+          "type": "[string]"
+        }
+      ]
+    },
+    {
+      "name": "SetMulticastTimeToLiveOptions",
+      "slug": "setmulticasttimetoliveoptions",
+      "docs": "Parameters for setting multicast time to live",
+      "tags": [
+        {
+          "text": "4.0.0",
+          "name": "since"
+        }
+      ],
+      "methods": [],
+      "properties": [
+        {
+          "name": "socketId",
+          "tags": [],
+          "docs": "The id of the socket",
+          "complexTypes": [],
+          "type": "number"
+        },
+        {
+          "name": "ttl",
+          "tags": [],
+          "docs": "The time to live value.",
+          "complexTypes": [],
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "SetMulticastLoopbackModeOptions",
+      "slug": "setmulticastloopbackmodeoptions",
+      "docs": "Parameters for setting multicast loopback mode",
+      "tags": [
+        {
+          "text": "4.0.0",
+          "name": "since"
+        }
+      ],
+      "methods": [],
+      "properties": [
+        {
+          "name": "socketId",
+          "tags": [],
+          "docs": "The id of the socket",
+          "complexTypes": [],
+          "type": "number"
+        },
+        {
+          "name": "enabled",
+          "tags": [],
+          "docs": "Whether to enable multicast loopback mode.",
+          "complexTypes": [],
+          "type": "boolean"
+        }
+      ]
+    },
+    {
+      "name": "PluginListenerHandle",
+      "slug": "pluginlistenerhandle",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "remove",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "() => Promise<void>"
+        }
+      ]
+    },
+    {
+      "name": "ReceiveEvent",
+      "slug": "receiveevent",
+      "docs": "Result of receiving data",
+      "tags": [
+        {
+          "text": "4.0.0",
+          "name": "since"
+        }
+      ],
+      "methods": [],
+      "properties": [
+        {
+          "name": "socketId",
+          "tags": [],
+          "docs": "The id of the socket",
+          "complexTypes": [],
+          "type": "number"
+        },
+        {
+          "name": "buffer",
+          "tags": [],
+          "docs": "The data received.",
+          "complexTypes": [],
+          "type": "string | undefined"
+        },
+        {
+          "name": "remoteAddress",
+          "tags": [],
+          "docs": "The address of the remote host.",
+          "complexTypes": [],
+          "type": "string | undefined"
+        },
+        {
+          "name": "remotePort",
+          "tags": [],
+          "docs": "The port of the remote host.",
+          "complexTypes": [],
+          "type": "number | undefined"
+        },
+        {
+          "name": "error",
+          "tags": [],
+          "docs": "Error message",
+          "complexTypes": [],
+          "type": "string | undefined"
+        }
+      ]
+    }
+  ],
+  "enums": [],
+  "typeAliases": [],
+  "pluginConfigs": []
+}
