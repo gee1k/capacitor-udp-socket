@@ -1,5 +1,6 @@
-import { SplashScreen } from '@capacitor/splash-screen';
 import { Camera } from '@capacitor/camera';
+import { SplashScreen } from '@capacitor/splash-screen';
+import { UdpSocket } from 'capacitor-udp-socket'
 
 window.customElements.define(
   'capacitor-welcome',

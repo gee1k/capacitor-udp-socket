@@ -1,6 +1,6 @@
 {
-  "name": "@isvend/capacitor-udp-socket",
-  "version": "5.0.0",
+  "name": "capacitor-udp-socket",
+  "version": "5.0.1",
   "description": "A UDP Socket Plugin for capacitor",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
@@ -74,5 +74,8 @@
     "android": {
       "src": "android"
     }
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
