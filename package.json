@@ -1,6 +1,6 @@
 {
   "name": "capacitor-udp-socket",
-  "version": "5.0.1",
+  "version": "5.0.2",
   "description": "A UDP Socket Plugin for capacitor",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",

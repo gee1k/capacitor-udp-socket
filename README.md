@@ -2,6 +2,8 @@
 
 A UDP Socket Plugin for capacitor
 
+Thanks [@unitree-czk](https://github.com/unitree-czk/capacitor-udp)
+
 ## Install
 
 ```bash
