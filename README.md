@@ -32,7 +32,6 @@ npx cap sync
 * [`setMulticastLoopbackMode(...)`](#setmulticastloopbackmode)
 * [`addListener('receive', ...)`](#addlistenerreceive)
 * [`addListener('receiveError', ...)`](#addlistenerreceiveerror)
-* [`removeAllListeners()`](#removealllisteners)
 * [Interfaces](#interfaces)
 
 </docgen-index>
@@ -363,21 +362,6 @@ Only available on Android and iOS.
 | **`listenerFunc`** | <code>(event: <a href="#receiveevent">ReceiveEvent</a>) =&gt; void</code> |
 
 **Returns:** <code>Promise&lt;<a href="#pluginlistenerhandle">PluginListenerHandle</a>&gt; & <a href="#pluginlistenerhandle">PluginListenerHandle</a></code>
-
-**Since:** 5.0.0
-
---------------------
-
-
-### removeAllListeners()
-
-```typescript
-removeAllListeners() => Promise<void>
-```
-
-Remove all native listeners for this plugin
-
-Only available on Android and iOS.
 
 **Since:** 5.0.0
 

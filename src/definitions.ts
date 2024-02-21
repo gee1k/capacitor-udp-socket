@@ -166,15 +166,6 @@ export interface UdpSocketPlugin {
     eventName: 'receiveError',
     listenerFunc: (event: ReceiveEvent) => void,
   ): Promise<PluginListenerHandle> & PluginListenerHandle;
-
-  /**
-   * Remove all native listeners for this plugin
-   *
-   * Only available on Android and iOS.
-   *
-   * @since 5.0.0
-   */
-  removeAllListeners(): Promise<void>;
 }
 
 // types

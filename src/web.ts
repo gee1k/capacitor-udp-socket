@@ -95,9 +95,4 @@ export class UdpSocketWeb extends WebPlugin implements UdpSocketPlugin {
     console.log('addListener', eventName, listenerFunc);
     throw new Error('Method not implemented.');
   }
-
-  async removeAllListeners(): Promise<void> {
-    console.log('removeAllListeners');
-    throw new Error('Method not implemented.');
-  }
 }
