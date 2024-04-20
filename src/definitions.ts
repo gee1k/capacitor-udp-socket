@@ -153,7 +153,7 @@ export interface UdpSocketPlugin {
   addListener(
     eventName: 'receive',
     listenerFunc: (event: ReceiveEvent) => void,
-  ): Promise<PluginListenerHandle> & PluginListenerHandle;
+  ): Promise<PluginListenerHandle>;
 
   /**
    * Listening for data reception exception events
@@ -165,7 +165,7 @@ export interface UdpSocketPlugin {
   addListener(
     eventName: 'receiveError',
     listenerFunc: (event: ReceiveEvent) => void,
-  ): Promise<PluginListenerHandle> & PluginListenerHandle;
+  ): Promise<PluginListenerHandle>;
 }
 
 // types
