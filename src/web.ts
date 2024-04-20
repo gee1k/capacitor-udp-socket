@@ -14,6 +14,7 @@ import type {
   LeaveGroupOptions,
   ReceiveEvent,
   SendOptions,
+  SendResult,
   SetBroadcastOptions,
   SetMulticastLoopbackModeOptions,
   SetMulticastTimeToLiveOptions,
@@ -39,7 +40,7 @@ export class UdpSocketWeb extends WebPlugin implements UdpSocketPlugin {
     console.log('bind', options);
     throw new Error('Method not implemented.');
   }
-  async send(options: SendOptions): Promise<void> {
+  async send(options: SendOptions): Promise<SendResult> {
     console.log('send', options);
     throw new Error('Method not implemented.');
   }

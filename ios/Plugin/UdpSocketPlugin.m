@@ -7,7 +7,7 @@ CAP_PLUGIN(UdpSocketPlugin, "UdpSocket",
     CAP_PLUGIN_METHOD(create, CAPPluginReturnPromise);
     CAP_PLUGIN_METHOD(update, CAPPluginReturnNone);
     CAP_PLUGIN_METHOD(bind, CAPPluginReturnNone);
-    CAP_PLUGIN_METHOD(send, CAPPluginReturnNone);
+    CAP_PLUGIN_METHOD(send, CAPPluginReturnPromise);
     CAP_PLUGIN_METHOD(close, CAPPluginReturnNone);
     CAP_PLUGIN_METHOD(closeAllSockets, CAPPluginReturnNone);
     CAP_PLUGIN_METHOD(setPaused, CAPPluginReturnNone);
@@ -16,7 +16,7 @@ CAP_PLUGIN(UdpSocketPlugin, "UdpSocket",
     CAP_PLUGIN_METHOD(setBroadcast, CAPPluginReturnNone);
     CAP_PLUGIN_METHOD(joinGroup, CAPPluginReturnNone);
     CAP_PLUGIN_METHOD(leaveGroup, CAPPluginReturnNone);
-    CAP_PLUGIN_METHOD(getJoinedGroups, CAPPluginReturnNone);
+    CAP_PLUGIN_METHOD(getJoinedGroups, CAPPluginReturnPromise);
     CAP_PLUGIN_METHOD(setMulticastTimeToLive, CAPPluginReturnNone);
     CAP_PLUGIN_METHOD(setMulticastLoopbackMode, CAPPluginReturnNone);
 )

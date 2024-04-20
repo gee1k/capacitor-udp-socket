@@ -40,7 +40,7 @@ export interface UdpSocketPlugin {
    *
    * @since 5.0.0
    */
-  send(options: SendOptions): Promise<void>;
+  send(options: SendOptions): Promise<SendResult>;
 
   /**
    * Close one socket
@@ -288,6 +288,13 @@ export interface SendOptions {
    * The data to send.
    */
   buffer: string;
+}
+
+/**
+ * Result of sending data
+ */
+export interface SendResult {
+  bytesSent: number;
 }
 
 /**

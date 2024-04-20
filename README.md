@@ -105,7 +105,7 @@ Only available on Android and iOS.
 ### send(...)
 
 ```typescript
-send(options: SendOptions) => Promise<void>
+send(options: SendOptions) => Promise<SendResult>
 ```
 
 Send udp data
@@ -115,6 +115,8 @@ Only available on Android and iOS.
 | Param         | Type                                                |
 | ------------- | --------------------------------------------------- |
 | **`options`** | <code><a href="#sendoptions">SendOptions</a></code> |
+
+**Returns:** <code>Promise&lt;<a href="#sendresult">SendResult</a>&gt;</code>
 
 **Since:** 5.0.0
 
@@ -410,6 +412,15 @@ Parameters for binding a UDP socket
 | **`socketId`** | <code>number</code> | The id of the socket                                                                        |
 | **`address`**  | <code>string</code> | The address to bind to. If not specified, the socket will be bound to the wildcard address. |
 | **`port`**     | <code>number</code> | The port to bind to.                                                                        |
+
+
+#### SendResult
+
+Result of sending data
+
+| Prop            | Type                |
+| --------------- | ------------------- |
+| **`bytesSent`** | <code>number</code> |
 
 
 #### SendOptions
