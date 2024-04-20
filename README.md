@@ -329,7 +329,7 @@ Only available on Android and iOS.
 ### addListener('receive', ...)
 
 ```typescript
-addListener(eventName: 'receive', listenerFunc: (event: ReceiveEvent) => void) => Promise<PluginListenerHandle> & PluginListenerHandle
+addListener(eventName: 'receive', listenerFunc: (event: ReceiveEvent) => void) => Promise<PluginListenerHandle>
 ```
 
 Listening for data reception events
@@ -341,7 +341,7 @@ Only available on Android and iOS.
 | **`eventName`**    | <code>'receive'</code>                                                    |
 | **`listenerFunc`** | <code>(event: <a href="#receiveevent">ReceiveEvent</a>) =&gt; void</code> |
 
-**Returns:** <code>Promise&lt;<a href="#pluginlistenerhandle">PluginListenerHandle</a>&gt; & <a href="#pluginlistenerhandle">PluginListenerHandle</a></code>
+**Returns:** <code>Promise&lt;<a href="#pluginlistenerhandle">PluginListenerHandle</a>&gt;</code>
 
 **Since:** 5.0.0
 
@@ -351,7 +351,7 @@ Only available on Android and iOS.
 ### addListener('receiveError', ...)
 
 ```typescript
-addListener(eventName: 'receiveError', listenerFunc: (event: ReceiveEvent) => void) => Promise<PluginListenerHandle> & PluginListenerHandle
+addListener(eventName: 'receiveError', listenerFunc: (event: ReceiveEvent) => void) => Promise<PluginListenerHandle>
 ```
 
 Listening for data reception exception events
@@ -363,7 +363,7 @@ Only available on Android and iOS.
 | **`eventName`**    | <code>'receiveError'</code>                                               |
 | **`listenerFunc`** | <code>(event: <a href="#receiveevent">ReceiveEvent</a>) =&gt; void</code> |
 
-**Returns:** <code>Promise&lt;<a href="#pluginlistenerhandle">PluginListenerHandle</a>&gt; & <a href="#pluginlistenerhandle">PluginListenerHandle</a></code>
+**Returns:** <code>Promise&lt;<a href="#pluginlistenerhandle">PluginListenerHandle</a>&gt;</code>
 
 **Since:** 5.0.0
 
